@@ -197,3 +197,98 @@ class MergeController:
 merge_controller = MergeController()
 #@END_CODE@#
 ````
+
+## Effect
+
+### Screenshots
+![0](./imgs/chat.openai.com_0.png)
+![1](./imgs/chat.openai.com_1.png)
+![2](./imgs/chat.openai.com_2.png)
+![3](./imgs/chat.openai.com_3.png)
+
+### Output
+```Python
+import pandas as pd
+from .._utils import Directory, File
+from .._apps import Combiner
+from .._file_getters import MergeFileGetter, SubtypeFileGetter
+
+__all__ = ['merge_controller']
+
+
+class MergeController:
+    """A class that controls the merging of multiple CSV files of disaster data
+    into separate CSV files for each country.
+
+    Attributes:
+        __output_folder (Directory): The output directory for the merged CSV 
+            files.
+        __countries (list[Directory]): The list of directories containing the 
+            CSV files to merge.
+        __subtypes (dict): The dictionary of subtypes for each type of disaster
+            data.
+
+    Methods:
+        start_merging: Starts the merging process.
+        __merge_for_all_countries: Merges the CSV files for all countries.
+        __merge_for_one_country: Merges the CSV files for one country.
+        __write_results: Writes the merged CSV file to disk.
+    """
+    def __init__(self):
+        self.__output_folder: Directory | None = None
+        self.__countries: list[Directory] | None = None
+        self.__subtypes: dict | None = None
+
+    def start_merging(self, data_folder: Directory):
+        """Starts the merging process for all the CSV files in the specified 
+        directory.
+
+        Args:
+            data_folder (Directory): The input directory containing the CSV 
+                files to merge.
+        """
+        merge_file_getter = MergeFileGetter(data_folder)
+        subtype_file_getter = SubtypeFileGetter(data_folder)
+        self.__output_folder = merge_file_getter.output_folder
+        self.__countries = merge_file_getter.countries
+        self.__subtypes = subtype_file_getter.subtypes
+        self.__merge_for_all_countries()
+
+    def __merge_for_all_countries(self):
+        """Merges the CSV files for all countries."""
+        for country in self.__countries:
+            self.__merge_for_one_country(country)
+
+    def __merge_for_one_country(self, file: File):
+        """Merges the CSV files for one country.
+
+        Args:
+            file (File): The input CSV file to merge.
+        """
+        country = file.get_filename()
+        combiner = Combiner(file, self.__subtypes)
+        events = combiner.events
+        self.__write_results(country, events)
+
+    def __write_results(self, country, events):
+        """Writes the merged CSV file to disk.
+
+        Args:
+            country (str): The name of the country to write to disk.
+            events (list[Event]): The list of Event objects to write to disk.
+        """
+        filepath = f"{self.__output_folder.get_path()}/{country}"
+        contents = list(
+            map(
+                lambda event: event.as_dict(),
+                events
+            )
+        )
+        # noinspection PyTypeChecker
+        df = pd.DataFrame.from_dict(contents)
+        df.to_csv(filepath, index=False)
+
+
+merge_controller = MergeController()
+
+```
