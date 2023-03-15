@@ -408,11 +408,15 @@ class ExampleClass(object):
 ````
 Instruction 2: When producing the output, keep the line length less or equal to 
 80 characters.
-Instruction 3: When producing the output, skip the method body, and only keep 
-the signature of class and method.
 ````
 
 ### dialog 5
+```
+Instruction 3: When producing the output, skip the method body, and only keep 
+the signature of class and method.
+```
+
+### dialog 6
 ````
 Example 1: I will give you an example that shows you how you can generate
 docstrings for me.
@@ -468,12 +472,12 @@ class Slicer:
 ```
 ````
 
-### dialog 6
+### dialog 7
 ```
 @#END_INSTRUCTION#@
 ```
 
-### dialog 7
+### dialog 8
 ````
 Please write docstrings for the following code.
 #@CODE_START@#
