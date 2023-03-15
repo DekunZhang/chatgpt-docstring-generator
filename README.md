@@ -201,10 +201,10 @@ merge_controller = MergeController()
 ### Responses
 
 #### Screenshots
-![0](./imgs/chat.openai.com_0.png)
-![1](./imgs/chat.openai.com_1.png)
-![2](./imgs/chat.openai.com_2.png)
-![3](./imgs/chat.openai.com_3.png)
+![0](./imgs/1/chat.openai.com_0.png)
+![1](./imgs/1/chat.openai.com_1.png)
+![2](./imgs/1/chat.openai.com_2.png)
+![3](./imgs/1/chat.openai.com_3.png)
 
 #### Output
 ```Python
