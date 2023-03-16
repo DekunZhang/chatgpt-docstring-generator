@@ -39,6 +39,11 @@ guidelines that you'd like to share, please feel free to open a pull request.
 This repository is licensed under the MIT license. See the [LICENSE](LICENSE) 
 file for more information.
 
+## Effects and Research Process
+If you are curious about the effect of the prompts or my research process,
+please checkout the [Research Process](Research-Process.md) for more 
+information.
+
 ## Prompts
 Input prompt 1-7 in sequence and put your code in prompt 8.
 
