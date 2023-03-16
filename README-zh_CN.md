@@ -4,7 +4,7 @@
 
 [English](README.md) [简体中文](README-zh_CN.md)
 
-欢迎使用 ChatGPT 代码注释生成器，这是一个由 OpenAI 开发的强大语言模型。本仓库提供了一系列提示和指南，帮助您使用 ChatGPT 为您的代码生成高质量的注释。
+欢迎使用 ChatGPT 代码注释生成器，ChatGPT是一个由 OpenAI 开发的强大语言模型。本仓库提供了一系列提示和指南，帮助您使用 ChatGPT 为您的代码生成高质量的注释。
 
 ## 概述
 
