@@ -1,5 +1,6 @@
 # ChatGPT 代码注释生成器
 
+[![许可证](https://upload.wikimedia.org/wikipedia/commons/b/bf/CC0_button-zh.svg)](LICENSE)  
 [![许可证](https://img.shields.io/cran/l/pixarfilms)](LICENSE)
 
 [English](README.md) [简体中文](README-zh_CN.md)
