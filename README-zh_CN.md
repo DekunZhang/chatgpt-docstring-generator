@@ -1,6 +1,6 @@
 # ChatGPT 代码注释生成器
 
-[![许可证](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![许可证](https://img.shields.io/cran/l/pixarfilms)](LICENSE)
 
 [English](README.md) [简体中文](README-zh_CN.md)
 
@@ -20,7 +20,7 @@
 
 ## 许可证
 
-本仓库采用 MIT 许可证授权。有关详细信息，请参见 [LICENSE](LICENSE) 文件。
+本仓库采用 CC0 1.0 通用许可证授权。有关详细信息，请参见 [LICENSE](LICENSE) 文件。
 
 ## 效果和研究过程
 如果您对提示的效果或我的研究过程感到好奇，请查看 [研究过程](Research-Process.md) 获取更多信息。
