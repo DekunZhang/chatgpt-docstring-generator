@@ -1,5 +1,6 @@
 # ChatGPT Docstring Generator
 
+[![License](https://upload.wikimedia.org/wikipedia/commons/6/69/CC0_button.svg)](LICENSE)  
 [![License](https://img.shields.io/cran/l/pixarfilms)](LICENSE)
 
 [English](README.md) [简体中文](README-zh_CN.md)
