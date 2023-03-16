@@ -1,6 +1,6 @@
 # ChatGPT Docstring Generator
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/cran/l/pixarfilms)](LICENSE)
 
 [English](README.md) [简体中文](README-zh_CN.md)
 
@@ -38,7 +38,7 @@ guidelines that you'd like to share, please feel free to open a pull request.
 
 ## License
 
-This repository is licensed under the MIT license. See the [LICENSE](LICENSE) 
+This repository is licensed under the Creative Commons Zero v1.0 Universal License (a.k.a. CC0). See the [LICENSE](LICENSE) 
 file for more information.
 
 ## Effects and Research Process
