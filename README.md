@@ -4,7 +4,7 @@
 
 [English](README.md) [简体中文](README-zh_CN.md)
 
-Welcome to chatgpt-docstring-prompts, a collection of instructions designed to 
+Welcome to ChatGPT Docstring Generator, a collection of instructions designed to 
 help you generate high-quality docstrings for your code using ChatGPT, a 
 powerful language model developed by OpenAI.
 
